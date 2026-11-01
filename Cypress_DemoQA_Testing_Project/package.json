@@ -1,0 +1,39 @@
+{
+  "name": "cypress-demoqa-testing-project",
+  "version": "1.0.0",
+  "description": "Automated Web UI Testing Using Cypress on DemoQA - University Semester Project",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:textbox": "cypress run --spec 'cypress/e2e/textbox.cy.js'",
+    "test:checkbox": "cypress run --spec 'cypress/e2e/checkbox.cy.js'",
+    "test:radio": "cypress run --spec 'cypress/e2e/radiobutton.cy.js'",
+    "test:tables": "cypress run --spec 'cypress/e2e/webtables.cy.js'",
+    "test:alerts": "cypress run --spec 'cypress/e2e/alerts-windows.cy.js'",
+    "test:buttons": "cypress run --spec 'cypress/e2e/buttons-links.cy.js'",
+    "clean:reports": "rm -rf cypress/reports",
+    "pretest:report": "npm run clean:reports",
+    "test:report": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports/mochawesome,overwrite=false,html=false,json=true && npm run generate:report",
+    "generate:report": "npx mochawesome-merge cypress/reports/mochawesome/*.json > cypress/reports/mochawesome/merged-report.json && npx marge cypress/reports/mochawesome/merged-report.json -f report -o cypress/reports/html"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "demoqa",
+    "software-testing",
+    "e2e-testing",
+    "qa"
+  ],
+  "author": "Undergraduate Student / QA Automation Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
+ 

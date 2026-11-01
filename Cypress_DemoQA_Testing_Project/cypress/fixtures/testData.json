@@ -1,0 +1,97 @@
+{
+  "textBox": {
+    "validUser": {
+      "fullName": "Alexander Vance",
+      "email": "alexander.vance@example.edu",
+      "currentAddress": "456 Innovation Boulevard, Suite 101, Tech District",
+      "permanentAddress": "789 Academic Way, Knowledge Park, Boston, MA 02115"
+    },
+    "invalidEmailUser": {
+      "fullName": "Invalid Email Test",
+      "email": "invalid-email-format-without-at",
+      "currentAddress": "123 Test St",
+      "permanentAddress": "456 Permanent St"
+    },
+    "multilineUser": {
+      "fullName": "Multiline Address Tester",
+      "email": "multiline.tester@example.com",
+      "currentAddress": "Apartment 4B\nBuilding 12\nCampus Heights",
+      "permanentAddress": "House #99\nSector 7\nEast Zone"
+    },
+    "emptyUser": {
+      "fullName": "",
+      "email": "",
+      "currentAddress": "",
+      "permanentAddress": ""
+    }
+  },
+  "checkBox": {
+    "leafNodes": ["notes", "commands", "react", "angular", "veu", "general", "excel", "word"],
+    "singleSelection": "notes",
+    "multipleSelections": ["notes", "react", "excel"],
+    "parentSelection": "desktop"
+  },
+  "radioButton": {
+    "yes": {
+      "id": "yesRadio",
+      "label": "Yes",
+      "expectedText": "Yes"
+    },
+    "impressive": {
+      "id": "impressiveRadio",
+      "label": "Impressive",
+      "expectedText": "Impressive"
+    },
+    "no": {
+      "id": "noRadio",
+      "label": "No"
+    }
+  },
+  "webTables": {
+    "defaultRecords": [
+      { "firstName": "Cierra", "lastName": "Vega", "age": 39, "email": "cierra@example.com", "salary": 10000, "department": "Insurance" },
+      { "firstName": "Alden", "lastName": "Cantrell", "age": 45, "email": "alden@example.com", "salary": 12000, "department": "Compliance" },
+      { "firstName": "Kierra", "lastName": "Gentry", "age": 29, "email": "kierra@example.com", "salary": 2000, "department": "Legal" }
+    ],
+    "newRecord": {
+      "firstName": "Sophia",
+      "lastName": "Martinez",
+      "userEmail": "sophia.martinez@university.edu",
+      "age": 28,
+      "salary": 75000,
+      "department": "Quality Assurance"
+    },
+    "updatedRecord": {
+      "firstName": "SophiaEdited",
+      "lastName": "MartinezUpdated",
+      "userEmail": "sophia.updated@university.edu",
+      "age": 32,
+      "salary": 85000,
+      "department": "Software Engineering"
+    },
+    "searchQueryExisting": "Cierra",
+    "searchQueryNonExistent": "ZZZ_NoSuchRecord_999",
+    "invalidEmailRecord": {
+      "firstName": "Invalid",
+      "lastName": "User",
+      "userEmail": "not-an-email",
+      "age": 25,
+      "salary": 50000,
+      "department": "Testing"
+    }
+  },
+  "alerts": {
+    "simpleAlertText": "You clicked a button",
+    "timerAlertText": "This alert appeared after 5 seconds",
+    "confirmAlertText": "Do you confirm action?",
+    "promptAlertText": "Please enter your name",
+    "promptInput": "Automated Cypress Tester",
+    "confirmSuccessText": "You selected Ok",
+    "confirmCancelText": "You selected Cancel"
+  },
+  "buttons": {
+    "doubleClickMessage": "You have done a double click",
+    "rightClickMessage": "You have done a right click",
+    "dynamicClickMessage": "You have done a dynamic click"
+  }
+}
